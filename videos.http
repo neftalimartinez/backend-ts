@@ -1,0 +1,27 @@
+@api = http://localhost:5000
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/5fb1e15f48051440785a5288
+
+###
+POST  {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://youtu.be/8Vt6PglFWb0",
+    "title": "Gura",
+    "description": "Big Iron"
+}
+
+###
+DELETE  {{api}}/videos/5fb336baa338e2315499173f
+
+###
+PUT  {{api}}/videos/5fb1e15f48051440785a5288
+Content-Type: application/json
+
+{
+    "title": "Graw Gura"
+}
